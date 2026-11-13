@@ -1,9 +1,13 @@
-import { useState } from 'react'
 import './App.css'
 import { animals } from './animals'
 
+const title = ''
+const animalFacts = <h1>{title ? title : 'Click an animal for a fun fact'}</h1>
+
+console.log(animalFacts)
+
 function App() {
-  return <></>
+  return <>{animalFacts}</>
 }
 
 export default App
