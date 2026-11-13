@@ -2,17 +2,16 @@ import './App.css'
 import { animals } from './animals'
 import oceanImg from './assets/images/ocean.jpg'
 
-const background = (
-  <div>
-    <img className="background" alt="ocean" src={oceanImg} />
-  </div>
-)
+const background = <img className="background" alt="ocean" src={oceanImg} />
 
 const title = ''
 const showBackground = true
 const animalFacts = (
   <div>
-    <h1>{title ? title : 'Click an animal for a fun fact'}</h1>
+    {/* ternary operator version */}
+    {/* <h1>{title ? title : 'Click an animal for a fun fact'}</h1> */}
+    {/* logical OR version */}
+    <h1>{title || 'Click an animal for a fun fact'}</h1>
     {showBackground && background}
     <p id="fact"></p>
   </div>
