@@ -9,9 +9,11 @@ const background = (
 )
 
 const title = ''
+const showBackground = true
 const animalFacts = (
   <div>
     <h1>{title ? title : 'Click an animal for a fun fact'}</h1>
+    {showBackground && background}
     <p id="fact"></p>
   </div>
 )
@@ -42,7 +44,6 @@ function App() {
   return (
     <>
       {animalFacts}
-      {background}
       <div className="animals">{images}</div>
     </>
   )
