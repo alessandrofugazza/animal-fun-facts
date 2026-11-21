@@ -1,4 +1,4 @@
-# animal-fun-facts
+# Animal Fun Facts
 
 ![preview](image.png)
 
